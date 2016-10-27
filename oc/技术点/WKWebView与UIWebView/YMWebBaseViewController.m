@@ -32,6 +32,11 @@
 
 -(void)dealloc{
   NSLog(@"YMWebBaseViewController dealloc");
+    if (self.webview) {
+        NSLog(@"webview ");
+        [self.webview removeObserver:self forKeyPath:@"estimatedProgress"];
+        self.webview = nil;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
