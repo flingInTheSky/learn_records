@@ -24,3 +24,23 @@ DerivedData
 # cocoapods: 必须加入版本控制：Podfile、Podfile.lock   xcworkspace和pods可选，加入的话每次更新都需要更新很多文件，不加入的话可以让用户根据Podfile来更新
 *.xcworkspace
 Pods/
+
+
+
+# Android/IJ
+#
+.idea
+.gradle
+local.properties
+app.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+
+# BUCK
+buck-out/
+\.buckd/
+android/keystores/debug.keystore
+.update
